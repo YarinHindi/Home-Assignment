@@ -14,7 +14,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class CommonOps extends Base{
-    public static void initBrowser(String browserType){
+    public static void initBrowser(){
         if (browserType.equalsIgnoreCase("Chrome")){
             driver = initChromeDriver();
         }else if(browserType.equalsIgnoreCase("FF")){
@@ -41,12 +41,26 @@ public class CommonOps extends Base{
         driver = new FirefoxDriver();
         return driver;
     }
+    public static void setBrowserType(String browser){
+        browserType = browser;
+    }
+    public static void setUrl(String otherUrl){
+        url = otherUrl;
+    }
 
     public static WebDriver initIEDriver() {
         WebDriverManager.iedriver().setup();
         driver = new InternetExplorerDriver();
         return driver;
     }
+
+    @BeforeClass
+    public void startSession(){
+        initBrowser();
+        managePages.init();
+
+    }
+    @AfterClass
     public static void close(){
         driver.quit();
     }
