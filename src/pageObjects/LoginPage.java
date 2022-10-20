@@ -12,4 +12,8 @@ public class LoginPage {
 
     @FindBy(how = How.XPATH,using = "//*[@id=\"send2\"]/span")
     public WebElement loginbutton;
+
+    @FindBy(how = How.XPATH,using = "/html/body/div[2]/header/div[1]/div/ul/li[1]/span")
+    public WebElement myNameAfterSignIn;
+
 }

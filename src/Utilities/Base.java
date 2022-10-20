@@ -13,7 +13,7 @@ public class Base {
     public static HomePage homePage;
     public static LoginPage loginPage;
     public static CreateAccount createAccount;
-    public static PorceedToCheckOutPage porceedToCheckOutPage;
+    public static ShippingOrdersDetailsPage shippingOrdersDetailsPage;
     public static ReviewPaymentPage reviewPaymentPage;
-    public static EndPaymentPage endPaymentPage;
+    public static ItemOption itemOption;
 }

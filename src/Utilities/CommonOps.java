@@ -26,6 +26,7 @@ public class CommonOps extends Base{
         }
         driver.manage().window().maximize();
         driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.manage().timeouts().pageLoadTimeout( Duration.ofSeconds(60));
         wait = new WebDriverWait(driver, Duration.ofSeconds(5)); // this  object  "wait" for elements to be visible in the page
         action = new Actions(driver);
