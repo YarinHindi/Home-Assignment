@@ -1,10 +1,10 @@
 # Home-Assignment
 
 
-#UML
+# UML
 ![Home Assignment](https://user-images.githubusercontent.com/79517893/197016792-2f5dbed1-37c1-42ba-aba4-81663c50f7e0.png)
 
-#About the project
+# About the project
 
 In that project I implemented testing system design using OOP.
 I used the page object model design pattern, And in Test package I wrote 
