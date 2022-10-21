@@ -2,10 +2,12 @@ package Test;
 
 import Extentions.Verifications;
 import Extentions.uiActions;
+import Utilities.Base;
 import Utilities.CommonOps;
 
 
 import WorkFlow.WorkFlows;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,11 +17,14 @@ import org.testng.annotations.Test;
 import Utilities.CommonOps;
 
 
+
+
 public class CreateAccountTest extends CommonOps {
 
-    @Test(description = "TEST-0 create an account and check if account and check if account is really created and name is correct")
+
+    @Test(description = "create an account and check if account and check if account is really created and name is correct")
     public void Test_01() {
-        WorkFlows.CreatAccount("yarin", "hindi", "yyyyyy@gmail.com", "1234!@#$a");
+        WorkFlows.CreatAccount("yarin", "hindi", "yyyyyyy@gmail.com", "1234!@#$a");
         Verifications.TitleOfPageAfterCreatAccount("My Account Magento Commerce - website to practice selenium " +
                 "| demo website for automation testing | selenium practice sites");
         Verifications.textInElement(createAccount.myAccountTxt, "My Account");

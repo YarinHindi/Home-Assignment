@@ -8,6 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
+/**
+ * In this class I did some workflows to late on to be able to test the flow of the web iam checking
+ * by interact with the verification class
+ * t
+ */
+
 public class WorkFlows extends CommonOps {
 
     public static void CreatAccount(String firstname,String lastname,String emailAd,String password){

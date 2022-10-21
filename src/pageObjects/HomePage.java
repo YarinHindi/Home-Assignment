@@ -3,6 +3,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+/**
+ * In HomePage class we define all Web element that we got in the HomePage page
+ * all the Object will be initialize by the manage page class.
+ */
+
 public class HomePage {
 
 
@@ -10,7 +16,7 @@ public class HomePage {
     public  WebElement homePageBtn;
 
     @FindBy(how = How.CSS,using = "button[id='top-cart-btn-checkout']")
-    public  WebElement proceedToCheckOutBtn;
+    public    WebElement proceedToCheckOutBtn;
 
     @FindBy(how = How.LINK_TEXT,using = "Sign In")
     public  WebElement signInBtn;

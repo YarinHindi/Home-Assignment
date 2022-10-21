@@ -4,6 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+/**
+ * In Create account class we define all Web element that we got in the Create account page
+ * all the Object will be initialize by the manage page class.
+ */
+
 public class CreateAccount {
 
     @FindBy(how = How.ID,using = "firstname")

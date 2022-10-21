@@ -3,6 +3,12 @@ import Utilities.CommonOps;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+
+/**
+ * uiActions class inherit from CommonOps.
+ * this class does the user action in the web such as click and write to a box.
+ */
+
 public class uiActions extends CommonOps {
 
     public static void click(WebElement elem) {
@@ -22,12 +28,5 @@ public class uiActions extends CommonOps {
         elem.clear();
     }
 
-    //might not use last one
-    public static void updateDropDown(WebElement elem, String value)
-    {
-        wait.until(ExpectedConditions.visibilityOf(elem));
-        Select myValue = new Select(elem);
-        myValue.deselectByVisibleText(value);
-    }
 
 }

@@ -4,6 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+/**
+ * In ShippingOrdersDetailsPage class we define all Web element that we got in the ShippingOrdersDetailsPage page
+ * all the Object will be initialized by the manage page class.
+ */
+
 public class ShippingOrdersDetailsPage {
 
     @FindBy(how = How.XPATH,using = "//*[@id=\"shipping\"]/div[1]")

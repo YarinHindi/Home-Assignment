@@ -3,7 +3,10 @@ package Extentions;
 import Utilities.CommonOps;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import static org.testng.Assert.*;
+
+/**
+ * This class responsible for checking if what we expected to see is what we acutely got
+ */
 
 public class Verifications extends CommonOps {
     //Verify the if the text in the element is correct

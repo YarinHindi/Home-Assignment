@@ -4,6 +4,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pageObjects.*;
 public class Base {
+    /**
+     * Base class is the class that define the varible that used in all the testing system.
+     * keeps the pages objects Webriver url to the website and browser type.
+     */
     public static WebDriver driver;
     public static WebDriverWait wait;
     public static Actions action;
