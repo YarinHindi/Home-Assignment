@@ -9,7 +9,7 @@ public class MyTests extends CommonOps{
 
     @org.testng.annotations.Test(description = "Create an account and verify account creation and user name (must be new account)")
     public void Test_01() {
-        WorkFlows.CreatAccount("yarin", "hindi", "123ddaa!2!@gmail.com", "1234!@#$a");
+        WorkFlows.CreatAccount("yarin", "hindi", "123ddaaa!2!@gmail.com", "1234!@#$a");
         Verifications.TitleOfPageAfterCreatAccount("My Account Magento Commerce - website to practice selenium " +
                 "| demo website for automation testing | selenium practice sites");
         Verifications.textInElement(createAccount.myAccountTxt, "My Account");

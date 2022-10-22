@@ -2,7 +2,6 @@ package Extentions;
 import Utilities.CommonOps;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 
 /**
  * uiActions class inherit from CommonOps.
@@ -13,7 +12,7 @@ public class uiActions extends CommonOps {
 
     public static void click(WebElement elem) {
         if (elem.isDisplayed()) {
-            wait.until(ExpectedConditions.elementToBeClickable(elem)); // this action will wait befor the click until the element will appears in the page
+            wait.until(ExpectedConditions.elementToBeClickable(elem)); // This action will wait before the click until the element will appear in the page
             elem.click();
         }
 
@@ -22,11 +21,6 @@ public class uiActions extends CommonOps {
     {
         wait.until(ExpectedConditions.visibilityOf(elem));
         elem.sendKeys(value);
-    }
-    public static void clearfield(WebElement elem)
-    {
-        wait.until(ExpectedConditions.visibilityOf(elem));
-        elem.clear();
     }
 
 
