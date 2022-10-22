@@ -4,15 +4,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 /**
  * CommonOps class inheritance from the base class.
@@ -30,9 +26,9 @@ public class CommonOps extends Base{
         }
         driver.manage().window().maximize();
         driver.get(url);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().timeouts().pageLoadTimeout( Duration.ofSeconds(60));;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(5)); // this  object  "wait" for elements to be visible in the page
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // This  object  "wait" for elements to be visible in the page
         action = new Actions(driver);
     }
     public static WebDriver initChromeDriver(){
@@ -55,8 +51,8 @@ public class CommonOps extends Base{
 
     public static WebDriver initIEDriver() {
         WebDriverManager.iedriver().setup();
-        driver = new InternetExplorerDriver();
-        return driver;
+        return  new InternetExplorerDriver();
+
     }
 
     @BeforeClass
@@ -66,7 +62,7 @@ public class CommonOps extends Base{
 
     }
     @AfterClass
-    public static void close(){
+    public void close(){
         driver.quit();
     }
 

@@ -16,6 +16,7 @@ public class uiActions extends CommonOps {
             wait.until(ExpectedConditions.elementToBeClickable(elem)); // this action will wait befor the click until the element will appears in the page
             elem.click();
         }
+
     }
     public static void updateText(WebElement elem, String value)
     {

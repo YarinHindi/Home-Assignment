@@ -2,7 +2,7 @@ package Utilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageObjects.*;
+import PageObjects.*;
 public class Base {
     /**
      * Base class is the class that define the varible that used in all the testing system.

@@ -1,6 +1,10 @@
 package Utilities;
-import pageObjects.*;
+import PageObjects.*;
 import org.openqa.selenium.support.PageFactory;
+
+/**
+ * This class initialize all pages Objects using pageFactory.
+ */
 public class managePages extends Base {
 
     public static void init(){

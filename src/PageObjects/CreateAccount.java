@@ -1,12 +1,12 @@
-package pageObjects;
+package PageObjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 /**
- * In Create account class we define all Web element that we got in the Create account page
- * all the Object will be initialize by the manage page class.
+ * In CreateAccount class we define all Web element that we got in the Create account page
+ * all the Object will be initialized by the manage page class.
  */
 
 public class CreateAccount {
@@ -37,6 +37,14 @@ public class CreateAccount {
 
     @FindBy(how = How.XPATH,using = "/html/body/div[2]/header/div[1]/div/ul/li[1]/span")
     public WebElement accountName;
+
+    @FindBy(how = How.XPATH,using = "/html/body/div[2]/header/div[1]/div/ul/li[2]/span/button")
+    public WebElement signOutBtn;
+
+    @FindBy(how = How.XPATH,using = "/html/body/div[2]/header/div[1]/div/ul/li[2]/div/ul/li[3]/a")
+    public WebElement selectSignOutBtn;
+
+
 
 
 }
